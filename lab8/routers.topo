@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="97A084FE-C550-4be1-8532-0CA8377CEC87" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-36-63-CA" com_port="2000" bootmode="0" cx="213.000000" cy="131.000000" edit_left="212" edit_top="113">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="576A7F03-FB95-4897-BAA9-0E67418AB122" name="R2" poe="0" model="Router" settings="" system_mac="54-89-98-DC-5F-C2" com_port="2001" bootmode="0" cx="577.000000" cy="126.000000" edit_left="628" edit_top="111">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="1952258C-104F-416f-8637-D5860CEFE4B4" name="R3" poe="0" model="Router" settings="" system_mac="54-89-98-88-6F-88" com_port="2002" bootmode="0" cx="214.000000" cy="353.000000" edit_left="241" edit_top="407">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="0AF3DB23-7616-4c58-99E2-E7CD1D49DC9A" name="R4" poe="0" model="Router" settings="" system_mac="54-89-98-25-03-2D" com_port="2003" bootmode="0" cx="580.000000" cy="348.000000" edit_left="607" edit_top="402">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="97A084FE-C550-4be1-8532-0CA8377CEC87" destDeviceID="1952258C-104F-416f-8637-D5860CEFE4B4">
+            <interfacePair lineName="Copper" srcIndex="5" srcBoundRectIsMoved="0" srcBoundRect_X="240.194519" srcBoundRect_Y="201.183334" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="5" tarBoundRectIsMoved="0" tarBoundRect_X="240.805481" tarBoundRect_Y="336.816681" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="576A7F03-FB95-4897-BAA9-0E67418AB122" destDeviceID="0AF3DB23-7616-4c58-99E2-E7CD1D49DC9A">
+            <interfacePair lineName="Copper" srcIndex="4" srcBoundRectIsMoved="0" srcBoundRect_X="604.583496" srcBoundRect_Y="196.179825" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="4" tarBoundRectIsMoved="0" tarBoundRect_X="606.416504" tarBoundRect_Y="331.820190" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="1952258C-104F-416f-8637-D5860CEFE4B4" destDeviceID="0AF3DB23-7616-4c58-99E2-E7CD1D49DC9A">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="0" srcBoundRect_X="284.179749" srcBoundRect_Y="379.410126" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="563.820251" tarBoundRect_Y="375.589874" tarOffset_X="-24.000000" tarOffset_Y="6.000000" />
+        </line>
+        <line srcDeviceID="97A084FE-C550-4be1-8532-0CA8377CEC87" destDeviceID="576A7F03-FB95-4897-BAA9-0E67418AB122">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="283.179688" srcBoundRect_Y="157.406876" srcOffset_X="-4.000000" srcOffset_Y="8.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="560.820313" tarBoundRect_Y="153.593124" tarOffset_X="-23.000000" tarOffset_Y="8.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="260" top="122" right="392" bottom="139" content="IP:10.10.10.10/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="445" top="120" right="577" bottom="137" content="IP:10.10.10.20/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="670" top="189" right="810" bottom="206" content="IP:172.16.19.10/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="68" top="196" right="231" bottom="213" content="IP:100.100.100.100/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="60" top="337" right="223" bottom="354" content="IP:100.100.100.200/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="262" top="408" right="409" bottom="425" content="IP:192.168.10.20/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="490" top="414" right="637" bottom="431" content="IP:192.168.10.10/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="665" top="328" right="805" bottom="345" content="IP:172.16.19.20/24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>

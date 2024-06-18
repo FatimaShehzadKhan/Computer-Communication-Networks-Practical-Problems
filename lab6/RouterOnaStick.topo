@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.3.00.100">
+    <devices>
+        <dev id="47DE2569-E4D1-42d7-BEA3-2B7EC5EC339E" name="PC2" poe="0" model="PC" settings=" -simpc_ip 20.20.20.20  -simpc_mask 255.255.255.0  -simpc_gateway 20.20.20.250  -simpc_mac 54-89-98-F3-43-53  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-F3-43-53" com_port="0" bootmode="0" cx="829.000000" cy="414.000000" edit_left="856" edit_top="468">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="AF24733D-985E-4087-B301-A4F878B698D9" name="PC1" poe="0" model="PC" settings=" -simpc_ip 10.10.10.10  -simpc_mask 255.255.255.0  -simpc_gateway 10.10.10.250  -simpc_mac 54-89-98-4A-1D-93  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-4A-1D-93" com_port="0" bootmode="0" cx="285.000000" cy="423.000000" edit_left="312" edit_top="477">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+        <dev id="B9FE59D4-F317-4f7e-BE32-C75AF106C83C" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-06-69-CB" com_port="2000" bootmode="0" cx="548.000000" cy="135.000000" edit_left="561" edit_top="186">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="A6E0F0D5-8549-414c-8499-7276B8B3959E" name="LSW1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-76-76-74" com_port="2001" bootmode="0" cx="551.000000" cy="288.000000" edit_left="578" edit_top="342">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="A6E0F0D5-8549-414c-8499-7276B8B3959E" destDeviceID="AF24733D-985E-4087-B301-A4F878B698D9">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="1" srcBoundRect_X="539.491760" srcBoundRect_Y="334.543640" srcOffset_X="-82.000000" srcOffset_Y="-21.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="350.508240" tarBoundRect_Y="430.456360" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="A6E0F0D5-8549-414c-8499-7276B8B3959E" destDeviceID="47DE2569-E4D1-42d7-BEA3-2B7EC5EC339E">
+            <interfacePair lineName="Copper" srcIndex="1" srcBoundRectIsMoved="1" srcBoundRect_X="617.332397" srcBoundRect_Y="332.826935" srcOffset_X="13.000000" srcOffset_Y="-8.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="816.667603" tarBoundRect_Y="423.173065" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+        <line srcDeviceID="B9FE59D4-F317-4f7e-BE32-C75AF106C83C" destDeviceID="A6E0F0D5-8549-414c-8499-7276B8B3959E">
+            <interfacePair lineName="Copper" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="575.846558" srcBoundRect_Y="205.175461" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="2" tarBoundRectIsMoved="0" tarBoundRect_X="577.153442" tarBoundRect_Y="271.824524" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes>
+        <shape type="1" filloption="1" color="12632256" upleftcorner="416,452" width="0" height="0" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="12632256" upleftcorner="262,139" width="319" height="354" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+        <shape type="1" filloption="1" color="16756479" upleftcorner="584,138" width="332" height="357" startpt="0,0" endpt="0,0" borderStyle="0" borderWidth="1" />
+    </shapes>
+    <txttips>
+        <txttip left="265" top="193" right="519" bottom="332" content="vlan 10&#x0D;&#x0A;&#x0D;&#x0A;Network ID: 10.10.10.0/24&#x0D;&#x0A;&#x0D;&#x0A;PC1 IP Address: 10.10.10.10/24&#x0D;&#x0A;&#x0D;&#x0A;PC2 Gateway: 10.10.10.250&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-4144960" charset="1" />
+        <txttip left="697" top="194" right="909" bottom="333" content="vlan 20&#x0D;&#x0A;&#x0D;&#x0A;Network ID: 20.20.20.0/24&#x0D;&#x0A;&#x0D;&#x0A;PC2: 20.20.20.20/24&#x0D;&#x0A;&#x0D;&#x0A;PC2 Gateway: 20.20.20.250&#x0D;&#x0A;" fontname="Consolas" fontstyle="0" editsize="110" txtcolor="-16777216" txtbkcolor="-32513" charset="1" />
+        <txttip left="12" top="10" right="469" bottom="136" content="Router on a stick:&#x0D;&#x0A;sub interfaces are made in router.&#x0D;&#x0A;0.1 is assigned the gateway of Pc1.&#x0D;&#x0A;0.2 is assigned the gateway of Pc2.&#x0D;&#x0A;Router isn&apos;t familiar with vlans so sub interfaces are made.&#x0D;&#x0A;On switch: &#x0D;&#x0A;trunk port is configured on the port(btw switch and router).&#x0D;&#x0A;serial ports for each pc." fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-1" charset="1" />
+    </txttips>
+</topo>
